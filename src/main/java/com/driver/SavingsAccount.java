@@ -20,6 +20,14 @@ public class SavingsAccount extends BankAccount{
         super.withdraw(amount);
     }
 
+    public double getRate() {
+        return rate;
+    }
+
+    public double getMaxWithdrawalLimit() {
+        return maxWithdrawalLimit;
+    }
+
     public double getSimpleInterest(int years){
         // Return the final amount considering that bank gives simple interest on current amount
         return getBalance() * (1 + (rate * years) / 100);
